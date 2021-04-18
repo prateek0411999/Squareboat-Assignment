@@ -1,0 +1,10 @@
+.changeSign{
+margin-top: 1.5rem;
+margin-right: .5rem;
+}
+.changeSign:hover{
+color: rgb( 64, 163, 239 );
+}
+.check{
+margin-top: 1.5rem;
+}

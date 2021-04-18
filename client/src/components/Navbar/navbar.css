@@ -1,0 +1,62 @@
+:root{
+    --blue:rgb( 64, 163, 239 );
+    --light: rgb(237, 243, 243);
+}
+.navbar{
+margin: 0;
+padding: 0;
+width: 100%;
+display: flex;
+font-size: large;
+flex-direction: row;
+background-color: var(--light);
+position: relative;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.branding{
+display: flex;
+flex-direction: row;
+align-items: center;
+font-size: large;
+justify-content: center;
+-right: 5rem;
+}
+.branding img{
+width: 4rem;
+height: 3.5rem;
+}
+.navbar .square{
+font-size: large;
+margin-left: 2rem;
+letter-spacing: 2px;
+
+}
+.square span{
+color: var(--blue);
+}
+
+.navbar .links{
+position: absolute;
+display: flex;
+flex-direction: row;
+
+top: 25%
+}
+
+.navbar .links p{
+margin-right: 2rem;
+color: black;
+text-decoration: none;
+transition: all .3sec ease-in;
+}
+.navbar .links p:hover {
+color: var(--blue);
+cursor: pointer;
+}
+.navbar .links p button{
+margin-top: -.9rem;}
+.navbar .links p span{
+color: var(--blue);
+margin-right: .5rem;
+
+}
