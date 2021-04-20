@@ -1,6 +1,11 @@
 :root{
-    --blue:rgb( 64, 163, 239 );
-    --light: rgb(237, 243, 243);
+    
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light:#F2F2F2;
+    --secondary: black;
 }
 .navbar{
 margin: 0;
@@ -9,7 +14,7 @@ width: 100%;
 display: flex;
 font-size: large;
 flex-direction: row;
-background-color: var(--light);
+background-color: var(--dark);
 position: relative;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -19,20 +24,21 @@ flex-direction: row;
 align-items: center;
 font-size: large;
 justify-content: center;
--right: 5rem;
+right: 5rem;
 }
 .branding img{
-width: 4rem;
-height: 3.5rem;
+width: 4.5rem;
+height: 3.8rem;
 }
 .navbar .square{
-font-size: large;
+ font-size: 1.6rem;
+    font-weight: 500;
 margin-left: 2rem;
 letter-spacing: 2px;
-
+color: var(--pure);
 }
 .square span{
-color: var(--blue);
+color: var(--primary);
 }
 
 .navbar .links{
@@ -44,19 +50,62 @@ top: 25%
 }
 
 .navbar .links p{
-margin-right: 2rem;
-color: black;
+margin-right: 2.5rem;
+color: var(--pure);
 text-decoration: none;
 transition: all .3sec ease-in;
 }
 .navbar .links p:hover {
-color: var(--blue);
+color: var(--primary);
 cursor: pointer;
 }
 .navbar .links p button{
 margin-top: -.9rem;}
 .navbar .links p span{
-color: var(--blue);
+color: var(--primary);
 margin-right: .5rem;
 
+}
+
+
+@media (min-width: 576px){
+    .navbar .links{
+    margin-left: -12rem;
+}
+.navbar .links p{
+margin-right: 1rem;
+
+}
+}
+@media (min-width: 768px){
+.navbar .links{
+    margin-left: -11rem;
+}
+.navbar .links p{
+margin-right: 1.3rem;
+
+}
+
+}
+
+
+@media (min-width: 992px){
+.navbar .links{
+    margin-left: -9rem;
+}
+.navbar .links p{
+margin-right: 2rem;
+
+}
+
+}
+@media (min-width: 1200px){
+.navbar .links{
+    margin-left: -7rem;
+}
+}
+@media (min-width: 1300px){
+.navbar .links{
+    margin-left: -2rem;
+}
 }
